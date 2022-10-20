@@ -1,6 +1,7 @@
-# react-rails-hello-world
+# Budget-App
 
-> By now I've used many different gems with Rails and this exercise will have me connect previous knowledge with new knowledge as I get a chance to use Webpack with jsbundling-rails gem.
+> This is a simple web application where we combine Rails with React using Webpack with jsbundling-rails gem.
+
 
 ## Built With
 
@@ -10,14 +11,13 @@
 - ![](https://img.shields.io/badge/PostgreSql-blue)
 - ![](https://img.shields.io/badge/Webpack-blue)
 
+
 ### Install & Setup
 
 To setup and install this sample AlFa Blog project, follow the below steps:
-
-- Clone this project by the command:
-
+- Clone this project by the command: 
   ```
-  git clone https://github.com/shahnawaza75/react-rails-hello-world.git
+  git clone https://github.com/Terbeche/Rails-Ract-Hello-World.git
   ```
 
 - Then switch to the project folder by the bellow query:
@@ -30,22 +30,20 @@ To setup and install this sample AlFa Blog project, follow the below steps:
   ```
   bundle install
   ```
-- Install yarn dependencies with:
+- Install yarn dependencies with: 
   ```
   yarn install
   ```
 - Before running below commands update [config/database.yml](./config/database.yml) with your local `DB`credentials. Then run:
+    ```
+    rake db:create
+    ```
+    ```
+    rake db:migrate
+    ```
 
-  ```
-  rake db:create
-  ```
-
-  ```
-  rake db:migrate
-  ```
 
 - With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails server` to run the website.
-
 ### Tests
 
 - Run `bundle install`
@@ -59,16 +57,18 @@ To setup and install this sample AlFa Blog project, follow the below steps:
 
 ## Author
 
-👤 **Shahnawaz Ali**
+👤 **Terbeche Mostefa**
 
-- GitHub: [@githubhandle](https://github.com/shahnawaza75)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/shahnawaz-ali5)
+- GitHub: [@githubhandle](https://github.com/Terbeche)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustapha-terbeche/)
+
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Terbeche/Rails-Ract-Hello-World/issues).
+
 
 ## Show your support
 
