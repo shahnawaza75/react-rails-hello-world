@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-
-  namespace :api, defaults: { format: :json } do
-    namespace :v1 do
-      resources :messages, only: [:index]
-    end
+  namespace :v1, defaults: {format: 'json'} do 
+    get 'greetings', to: 'greetings#index'
   end
-  
-  root 'root#index'
-
+  get '*page', to: 'static#index', constraints: ->(req) do
+    !req.xhr? && req.format.html?
+  end
+  root 'static#index'
 end
