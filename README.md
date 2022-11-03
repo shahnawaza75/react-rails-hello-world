@@ -16,7 +16,6 @@
 
 ## Live Presentation Video
 
-## Live Demo
 
 ### Getting Started
 
