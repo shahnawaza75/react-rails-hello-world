@@ -1,11 +1,9 @@
 Rails.application.routes.draw do
-
-  namespace :api, defaults: { format: :json } do
+  namespace :api do
     namespace :v1 do
-      resources :messages, only: [:index]
+      get 'messages/random', to: 'messages#random'
     end
   end
-  
-  root 'root#index'
 
+  root 'root#index'
 end
