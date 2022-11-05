@@ -1,27 +1,17 @@
-import React from "react"
-import PropTypes from "prop-types"
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Provider } from 'react-redux'
-import Greeting from "./Greeting";
+import React from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Provider } from "react-redux";
+import store from "../redux/store";
+import Greeting from "./Greetings";
 
-import configureStore from "../configureStore";
-const store = configureStore();
-
-class App extends React.Component {
-  render () {
-    return (
-      <React.Fragment>
-        <Provider store={store}>
-        <Router>
-          <Routes>
-           <Route exact path="/" element={ ('Hello') } />
-           <Route path="/greating" element={<Greeting />} />
-          </Routes>
-        </Router>
-        </Provider>
-      </React.Fragment>
-    );
-  }
+function App() {
+  return (
+    <Provider store={store}>
+      <Router>
+        <Route path="/" element={<Greeting />} />
+      </Router>
+    </Provider>
+  );
 }
 
 export default App;
