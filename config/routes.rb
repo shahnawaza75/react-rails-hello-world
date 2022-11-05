@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
-  namespace :v1, defaults: {format: 'json'} do 
-    get 'greetings', to: 'greetings#index'
+  namespace :api do
+    namespace :v1 do
+      get 'messages/random', to: 'messages#random'
+    end
   end
-  get '*page', to: 'static#index', constraints: ->(req) do
-    !req.xhr? && req.format.html?
-  end
-  root 'static#index'
+
+  root 'root#index'
 end

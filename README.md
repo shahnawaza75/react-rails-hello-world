@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Budget-APP
+# React-Rails-Hello-World
 
 > By now I've used many different gems with Rails and this exercise will have I connect previous knowledge with new knowledge as I get a chance to use Webpack with jsbundling-rails gem.
 
@@ -15,8 +15,6 @@
 - Run tests using rspec
 
 ## Live Presentation Video
-
-## Live Demo
 
 ### Getting Started
 
